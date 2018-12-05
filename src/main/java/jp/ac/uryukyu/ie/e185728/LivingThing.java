@@ -13,6 +13,12 @@ public class LivingThing {
     private int attack;
     private boolean dead;
 
+    /**
+     * 初期ステータス設定
+     * @param name 敵の名前
+     * @param hitPoint 敵のHP
+     * @param attack 敵の攻撃力
+     */
     public LivingThing( String name, int hitPoint, int attack ) {
         this.name = name;
         this.hitPoint = hitPoint;
@@ -22,7 +28,7 @@ public class LivingThing {
 
     /**
      * deadのゲッターと同義。
-     * @return
+     * @return dead
      */
     public boolean isDead() {
         return dead;
